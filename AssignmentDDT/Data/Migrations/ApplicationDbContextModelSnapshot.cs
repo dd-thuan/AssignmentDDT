@@ -34,7 +34,7 @@ namespace AssignmentDDT.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Catefgory");
+                    b.ToTable("Category");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

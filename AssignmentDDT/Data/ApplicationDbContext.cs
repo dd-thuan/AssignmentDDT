@@ -15,7 +15,7 @@ namespace AssignmentDDT.Data
 
         }
 
-        public DbSet<Category> Catefgory { get; set; }
+        public DbSet<Category> Category { get; set; }
 
     }
 }

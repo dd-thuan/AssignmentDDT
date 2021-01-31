@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AssignmentDDT.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210131094034_AddCategory")]
+    [Migration("20210131121407_AddCategory")]
     partial class AddCategory
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,7 +36,7 @@ namespace AssignmentDDT.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Catefgory");
+                    b.ToTable("Category");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
