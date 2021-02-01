@@ -1,0 +1,49 @@
+﻿@model IEnumerable<AssignmentDDT.Models.Category>
+@{
+    ViewData["Title"] = "Index";
+ }
+
+    <div class="container p-3">
+        <div class="row pt-4">
+            <h2 class="text-primary">
+                Category
+            </h2>
+        </div>
+        <div class="col-6">
+            Create New Category
+        </div>
+
+    </div> <br />
+
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-bordered table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>
+                     Category Name
+                </th>
+                <th>
+                     Description
+                </th>
+                <th>
+                    Price
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var obj in Model)
+            {
+            <tr>
+                <td width="50%">@obj.Name</td>
+                <td width="50%">@obj.Description</td>
+                <td width="50%">@obj.Price</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+     }
+    else
+    {
+            <p>No category</p>
+    }

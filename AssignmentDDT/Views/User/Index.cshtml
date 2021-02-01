@@ -1,0 +1,12 @@
+﻿@model  IEnumerable<AssignmentDDT.Models.Users>
+@using AssignmentDDT.Models;
+@{
+    ViewData["Title"] = "Index";
+}
+
+@foreach(var item in Model)
+{
+    <li>@item.Course</li>
+    <li>@item.</li>
+    <li>@item.Name</li>
+}

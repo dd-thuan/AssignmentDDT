@@ -1,14 +1,16 @@
-﻿using AssignmentDDT.Models;
+﻿using AssignmentDDT.Controllers;
+using AssignmentDDT.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AssignmentDDT.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : DbContext
     {
+        public ApplicationDbContext()
+        {
+        }
+        
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
@@ -16,6 +18,7 @@ namespace AssignmentDDT.Data
         }
 
         public DbSet<Category> Category { get; set; }
+        public DbSet<Users> User { get; set; }
 
     }
 }
