@@ -18,7 +18,7 @@ namespace AssignmentDDT.Data
         }
 
         public DbSet<Category> Category { get; set; }
-        public DbSet<Users> User { get; set; }
-
+       
+        public DbSet<UsersList> UsersList { get; set; }
     }
 }

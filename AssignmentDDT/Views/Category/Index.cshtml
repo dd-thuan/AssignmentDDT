@@ -1,4 +1,4 @@
-﻿@model IEnumerable<AssignmentDDT.Models.Category>
+﻿
 @{
     ViewData["Title"] = "Index";
  }
@@ -10,10 +10,12 @@
             </h2>
         </div>
         <div class="col-6">
-            Create New Category
+            <a asp-controller="Category" asp-action="Create" class="btn-primary">
+                Create New Category
+            </a>
         </div>
 
-    </div> <br />
+    </div> <br />   
 
     @if (Model.Count() > 0)
     {
